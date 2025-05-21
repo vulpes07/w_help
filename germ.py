@@ -386,6 +386,10 @@ async def process_remove_user(callback_query: types.CallbackQuery, state: FSMCon
 
 
 
+
+
+
+
 @router_germ.message(F.text == "🍽️ Kostenlose Verpflegung")
 async def cmd_food_de(message: types.Message):
     if not (is_admin(message.from_user.id) or is_registered(message.from_user.id)):
@@ -393,39 +397,39 @@ async def cmd_food_de(message: types.Message):
         return
     await message.answer(
         f"""
-1. **Sozialladen „Chadija“**  
+1. __Sozialladen „Chadija“__  
 Beschreibung: Ein Laden, in dem bedürftige Familien kostenlos Lebensmittel und Kleidung erhalten können.  
 Adresse: Mikrobezirk „Amir-Timur“, Verwaltungsbezirk Nr. 9, Stadt Osch.  
 Hinweis: Für die Inanspruchnahme der Hilfe kann eine Bescheinigung des Quartierskomitees erforderlich sein.  
-[Mehr auf Vesti.kg](https://vesti.kg/obshchestvo/item/102644-v-oshe-otkroyut-sotsialnye-magaziny-dlya-maloobespechennykh-sloev-naseleniya.html)  
-[Mehr auf News Asia](https://www.news-asia.ru/view/5/10322)  
+Mehr auf Vesti.kg: https://vesti.kg/obshchestvo/item/102644-v-oshe-otkroyut-sotsialnye-magaziny-dlya-maloobespechennykh-sloev-naseleniya.html  
+Mehr auf News Asia: https://www.news-asia.ru/view/5/10322  
 
-2. **Gemeinnütziger Fonds „Kyrgyzstan Zhashstar Yntymagy“**  
+2. __Gemeinnütziger Fonds „Kyrgyzstan Zhashstar Yntymagy“__  
 Beschreibung: Bietet karitative Hilfe für bedürftige Familien, einschließlich Grundnahrungsmitteln.  
 Adresse: Stadt Osch (genaue Adresse nicht angegeben).  
 Hinweis: Der Fonds ist in den Mikrobezirken Kulatow, Anar und Toloykon aktiv.  
-[Mehr auf Media Center](https://media-center.kg/ru/news/Kirgizstan-ZHashtar-Intimagi-okazal-pomoshch-nuzhdayushchimsya-semyam-v-Oshe-foto-920431711)  
+Mehr auf Media Center: https://media-center.kg/ru/news/Kirgizstan-ZHashtar-Intimagi-okazal-pomoshch-nuzhdayushchimsya-semyam-v-Oshe-foto-920431711  
 
-3. **Gemeinnütziger Fonds „Blagodat“**  
+3. __Gemeinnütziger Fonds „Blagodat“__  
 Beschreibung: Hilfsorganisation, die Unterstützung für Bedürftige anbietet.  
 Adresse: Lenina-Straße 205, Zimmer 211, 213, 214; 2. Stock, Frunse-Viertel, Stadt Osch.  
-Soziale Medien: [Instagram](https://www.instagram.com/).  
+Soziale Medien: Instagram: https://www.instagram.com/  
 
-4. **Wohltätigkeitsfonds „Sunterra-Süd“**  
+4. __Wohltätigkeitsfonds „Sunterra-Süd“__  
 Beschreibung: Fonds für Eltern von Kindern mit Down-Syndrom, bietet Unterstützung und Hilfe.  
 Adresse: Askara Shakirov-Straße 10/1, Stadt Osch.  
-Webseite: [sunterra.kg](https://sunterra.kg/).  
+Webseite: https://sunterra.kg/  
 
-5. **Sozialläden der kommunalen Verwaltungsbezirke**  
+5. __Sozialläden der kommunalen Verwaltungsbezirke__  
 Beschreibung: Läden, in denen einkommensschwache Bürger Fleisch- und Milchprodukte zu 10 % unter dem Marktpreis kaufen können.  
 Adresse: In allen sieben kommunalen Verwaltungsbezirken der Stadt Osch.  
 Hinweis: Das Projekt wird von der Stadtverwaltung unterstützt.  
-[Mehr auf Vesti.kg](https://vesti.kg/obshchestvo/item/102644-v-oshe-otkroyut-sotsialnye-magaziny-dlya-maloobespechennykh-sloev-naseleniya.html)  
+Mehr auf Vesti.kg: https://vesti.kg/obshchestvo/item/102644-v-oshe-otkroyut-sotsialnye-magaziny-dlya-maloobespechennykh-sloev-naseleniya.html  
 
-6. **Städtische Sozialfondsverwaltung Osch**  
+6. __Städtische Sozialfondsverwaltung Osch__  
 Beschreibung: Staatliche Einrichtung, die Sozialhilfe für Bedürftige bereitstellt.  
 Adresse: Kurmandjan-Datka-Straße 130, Stadt Osch.  
-Kontakt: +996 (3222) 2-28-70.  
+Kontakt: +996 (3222) 2-28-70  
 """
     )
 
@@ -437,32 +441,33 @@ async def cmd_house_de(message: types.Message):
         return
     await message.answer(
         f"""
-1. **Obdachlosenunterkunft der NGO „Mussada“**  
+1. __Obdachlosenunterkunft der NGO „Mussada“__  
 Beschreibung: Die einzige bekannte Unterkunft für Obdachlose in Osch, Platz für 15 Personen. Wurde in Zusammenarbeit mit der Stadtverwaltung eingerichtet.  
 Adresse: Stadt Osch (genaue Adresse nicht angegeben).  
 Hinweis: Bietet vorübergehende Unterkunft für Obdachlose.  
-[Mehr auf interbilimosh.kg](https://www.interbilimosh.kg/a-vy-znali-chto-v-oshe-chislo-bezdomnyh-variruetsya-ot-56-do-70/)  
+Mehr auf interbilimosh.kg: https://www.interbilimosh.kg/a-vy-znali-chto-v-oshe-chislo-bezdomnyh-variruetsya-ot-56-do-70/  
 
-2. **Günstige Hostels**  
+2. __Günstige Hostels__  
 Zwar nicht kostenlos, aber einige Hostels in Osch bieten preiswerte Übernachtungsmöglichkeiten:  
-- **Wood Hostel**: ab 297 SOM pro Nacht.  
-- **Hostel Visit**: ab 459 SOM pro Nacht.  
-- **ABS Guest House**: ab 350 SOM pro Nacht.  
-- **Sunny Hostel**: ab 297 SOM pro Nacht.  
-- **Ocean Hostel**: ab 297 SOM pro Nacht.  
-[Hostels auf hostelz.com](https://www.hostelz.com/hostels/Kyrgyzstan/Osh)  
+- __Wood Hostel__: ab 297 SOM pro Nacht  
+- __Hostel Visit__: ab 459 SOM pro Nacht  
+- __ABS Guest House__: ab 350 SOM pro Nacht  
+- __Sunny Hostel__: ab 297 SOM pro Nacht  
+- __Ocean Hostel__: ab 297 SOM pro Nacht  
+Hostels auf hostelz.com: https://www.hostelz.com/hostels/Kyrgyzstan/Osh  
 
-3. **Hilfsorganisationen und Initiativen**  
+3. __Hilfsorganisationen und Initiativen__  
 Einige NGOs in Osch bieten möglicherweise vorübergehende Unterkünfte an:  
-- **Gemeinnütziger Fonds „Blagodat“**  
-  - Adresse: Lenina-Straße 205, Zimmer 211, 213, 214; 2. Stock, Frunse-Viertel, Stadt Osch.  
-  - Soziale Medien: [Instagram](https://www.instagram.com/)  
-  - [Mehr auf 2GIS](https://2gis.kg/osh/firm/70000001030680206)  
 
-- **Gemeinnütziger Fonds „Sunterra-Süd“**  
-  - Adresse: Askara Shakirov-Straße 10/1, Stadt Osch.  
-  - Webseite: [sunterra.kg](https://sunterra.kg/)  
-  - [Mehr auf 2GIS](https://2gis.kg/osh/firm/70000001069418449)  
+- __Gemeinnütziger Fonds „Blagodat“__  
+  Adresse: Lenina-Straße 205, Zimmer 211, 213, 214; 2. Stock, Frunse-Viertel, Stadt Osch  
+  Soziale Medien: Instagram: https://www.instagram.com/  
+  Mehr auf 2GIS: https://2gis.kg/osh/firm/70000001030680206  
+
+- __Gemeinnütziger Fonds „Sunterra-Süd“__  
+  Adresse: Askara Shakirov-Straße 10/1, Stadt Osch  
+  Webseite: https://sunterra.kg/  
+  Mehr auf 2GIS: https://2gis.kg/osh/firm/70000001069418449  
 """
     )
 
@@ -474,25 +479,25 @@ async def cmd_help_de(message: types.Message):
         return
     await message.answer(
         f"""
-1. **Krisenzentrum „Ak-Zhurok“**  
+1. __Krisenzentrum „Ak-Zhurok“__  
 Beschreibung: Seit 2002 bietet es kostenlose psychologische, rechtliche und soziale Hilfe für Frauen und Kinder, die Gewalt erfahren haben. 2009 wurde eine Schutzuunterkunft eröffnet.  
-Adresse: Lenina-Straße 205, Stadt Osch.  
+Adresse: Lenina-Straße 205, Stadt Osch  
 Telefon: +996 (3222) 4-59-76  
 E-Mail: kjurok01@gmail.com  
-Webseite: [crisis-center-osh.org](https://crisis-center-osh.org/)  
-Soziale Medien: [Facebook](https://www.facebook.com/akjurokcrisiscenter/?locale=ru_RU), [Instagram](https://www.instagram.com/p/CiQTqYhLdih/)  
+Webseite: https://crisis-center-osh.org/  
+Soziale Medien: Facebook: https://www.facebook.com/akjurokcrisiscenter/?locale=ru_RU, Instagram: https://www.instagram.com/p/CiQTqYhLdih/  
 
-2. **Krisenzentrum „Aruulan“ (NGO „Ayalzat“)**  
+2. __Krisenzentrum „Aruulan“ (NGO „Ayalzat“)__  
 Beschreibung: Bietet psychologische, rechtliche und medizinische Hilfe für Frauen und Mädchen, die häusliche Gewalt erlebt haben.  
-Adresse: Lenina-Straße 205, Stadt Osch.  
+Adresse: Lenina-Straße 205, Stadt Osch  
 Telefon: +996 (3222) 5-56-08  
 E-Mail: ayalzat@netmail.kg  
-Soziale Medien: [Instagram](https://www.instagram.com/ayalzat.osh/p/Csv3Fr5Mqdc/)  
+Soziale Medien: Instagram: https://www.instagram.com/ayalzat.osh/p/Csv3Fr5Mqdc/  
 
-3. **NGO „Meerban“**  
+3. __NGO „Meerban“__  
 Beschreibung: Unterstützt gewaltbetroffene Frauen durch psychologische Beratung und Advocacy-Arbeit.  
-Adresse: Lenina-Straße 312/23, Stadt Osch.  
+Adresse: Lenina-Straße 312/23, Stadt Osch  
 Telefon: +996 (3222) 7-40-06, +996 (3222) 7-40-17  
 E-Mail: meerban.osh@mail.ru  
 """
-    )
+)
