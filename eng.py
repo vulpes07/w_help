@@ -393,6 +393,11 @@ async def process_remove_user(callback_query: types.CallbackQuery, state: FSMCon
 
 
 
+
+
+
+
+
 @router_eng.message(F.text == "🍽️ Free meals and food")
 async def cmd_food_en(message: types.Message):
     if not (is_admin(message.from_user.id) or is_registered(message.from_user.id)):
@@ -400,39 +405,39 @@ async def cmd_food_en(message: types.Message):
         return
     await message.answer(
         f"""
-1. **Social Store "Khadija"**  
+1. __Social Store "Khadija"__  
 Description: A store where low-income families can receive free food and clothing.  
 Address: Microdistrict "Amir-Timur", Territorial Administration No. 9, Osh City.  
 Note: A certificate from the local neighborhood committee may be required to receive assistance.  
-[More on Vesti.kg](https://vesti.kg/obshchestvo/item/102644-v-oshe-otkroyut-sotsialnye-magaziny-dlya-maloobespechennykh-sloev-naseleniya.html)  
-[More on News Asia](https://www.news-asia.ru/view/5/10322)  
+More on Vesti.kg: https://vesti.kg/obshchestvo/item/102644-v-oshe-otkroyut-sotsialnye-magaziny-dlya-maloobespechennykh-sloev-naseleniya.html  
+More on News Asia: https://www.news-asia.ru/view/5/10322  
 
-2. **Public Foundation "Kyrgyzstan Zhashstar Yntymagy"**  
+2. __Public Foundation "Kyrgyzstan Zhashstar Yntymagy"__  
 Description: Provides charitable assistance to needy families, including essential food items.  
 Address: Osh City (exact address not specified).  
 Note: The foundation actively works in the Kulatov, Anar, and Toloykon microdistricts.  
-[More on Media Center](https://media-center.kg/ru/news/Kirgizstan-ZHashtar-Intimagi-okazal-pomoshch-nuzhdayushchimsya-semyam-v-Oshe-foto-920431711)  
+More on Media Center: https://media-center.kg/ru/news/Kirgizstan-ZHashtar-Intimagi-okazal-pomoshch-nuzhdayushchimsya-semyam-v-Oshe-foto-920431711  
 
-3. **Public Foundation "Blagodat"**  
+3. __Public Foundation "Blagodat"__  
 Description: A community foundation providing assistance to those in need.  
 Address: 205 Lenin St., Rooms 211, 213, 214; 2nd Floor, Frunze District, Osh City.  
-Social Media: [Instagram](https://www.instagram.com/).  
+Social Media: Instagram: https://www.instagram.com/  
 
-4. **Charitable Foundation "Sunterra-South"**  
+4. __Charitable Foundation "Sunterra-South"__  
 Description: A foundation for parents of children with Down syndrome, offering support and aid.  
 Address: 10/1 Askara Shakirov St., Osh City.  
-Website: [sunterra.kg](https://sunterra.kg/).  
+Website: sunterra.kg: https://sunterra.kg/  
 
-5. **Social Stores at Municipal Territorial Administrations**  
+5. __Social Stores at Municipal Territorial Administrations__  
 Description: Stores where low-income residents can purchase meat and dairy products at 10% below market prices.  
 Address: Across all seven municipal territorial administrations in Osh City.  
 Note: The project is implemented with support from the city mayor’s office.  
-[More on Vesti.kg](https://vesti.kg/obshchestvo/item/102644-v-oshe-otkroyut-sotsialnye-magaziny-dlya-maloobespechennykh-sloev-naseleniya.html)  
+More on Vesti.kg: https://vesti.kg/obshchestvo/item/102644-v-oshe-otkroyut-sotsialnye-magaziny-dlya-maloobespechennykh-sloev-naseleniya.html  
 
-6. **Osh City Social Fund Administration**  
+6. __Osh City Social Fund Administration__  
 Description: A government agency providing social assistance to those in need.  
 Address: 130 Kurmanjan Datka St., Osh City.  
-Contact: +996 (3222) 2-28-70.  
+Contact: +996 (3222) 2-28-70  
 """
     )
 
@@ -444,32 +449,32 @@ async def cmd_house_en(message: types.Message):
         return
     await message.answer(
         f"""
-1. **Shelter by NGO "Mussada"**  
+1. __Shelter by NGO "Mussada"__  
 Description: The only known shelter for homeless people in Osh, accommodating up to 15 individuals. Established in collaboration with the city mayor’s office.  
 Address: Osh City (exact address not specified).  
 Note: Provides temporary housing for the homeless.  
-[More on interbilimosh.kg](https://www.interbilimosh.kg/a-vy-znali-chto-v-oshe-chislo-bezdomnyh-variruetsya-ot-56-do-70/)  
+More on interbilimosh.kg: https://www.interbilimosh.kg/a-vy-znali-chto-v-oshe-chislo-bezdomnyh-variruetsya-ot-56-do-70/  
 
-2. **Budget Hostels**  
+2. __Budget Hostels__  
 While not free, some hostels in Osh offer affordable accommodation:  
-- **Wood Hostel**: from 297 KGS/night.  
-- **Hostel Visit**: from 459 KGS/night.  
-- **ABS Guest House**: from 350 KGS/night.  
-- **Sunny Hostel**: from 297 KGS/night.  
-- **Ocean Hostel**: from 297 KGS/night.  
-[View hostels on hostelz.com](https://www.hostelz.com/hostels/Kyrgyzstan/Osh)  
+- __Wood Hostel__: from 297 KGS/night  
+- __Hostel Visit__: from 459 KGS/night  
+- __ABS Guest House__: from 350 KGS/night  
+- __Sunny Hostel__: from 297 KGS/night  
+- __Ocean Hostel__: from 297 KGS/night  
+View hostels on hostelz.com: https://www.hostelz.com/hostels/Kyrgyzstan/Osh  
 
-3. **NGOs and Initiatives**  
+3. __NGOs and Initiatives__  
 Some NGOs in Osh may provide temporary housing assistance:  
-- **Public Foundation "Blagodat"**  
-  - Address: 205 Lenin St., Rooms 211, 213, 214; 2nd Floor, Frunze District, Osh City.  
-  - Social Media: [Instagram](https://www.instagram.com/)  
-  - [More on 2GIS](https://2gis.kg/osh/firm/70000001030680206)  
+- __Public Foundation "Blagodat"__  
+  - Address: 205 Lenin St., Rooms 211, 213, 214; 2nd Floor, Frunze District, Osh City  
+  - Social Media: Instagram: https://www.instagram.com/  
+  - More on 2GIS: https://2gis.kg/osh/firm/70000001030680206  
 
-- **Charitable Foundation "Sunterra-South"**  
-  - Address: 10/1 Askara Shakirov St., Osh City.  
-  - Website: [sunterra.kg](https://sunterra.kg/)  
-  - [More on 2GIS](https://2gis.kg/osh/firm/70000001069418449)  
+- __Charitable Foundation "Sunterra-South"__  
+  - Address: 10/1 Askara Shakirov St., Osh City  
+  - Website: sunterra.kg: https://sunterra.kg/  
+  - More on 2GIS: https://2gis.kg/osh/firm/70000001069418449  
 """
     )
 
@@ -481,24 +486,24 @@ async def cmd_help_en(message: types.Message):
         return
     await message.answer(
         f"""
-1. **Crisis Center "Ak-Zhurok"**  
+1. __Crisis Center "Ak-Zhurok"__  
 Description: Operating since 2002, it provides free psychological, legal, and social support to women and children affected by violence. A shelter was opened in 2009.  
-Address: 205 Lenin St., Osh City.  
+Address: 205 Lenin St., Osh City  
 Phone: +996 (3222) 4-59-76  
 Email: kjurok01@gmail.com  
-Website: [crisis-center-osh.org](https://crisis-center-osh.org/)  
-Social Media: [Facebook](https://www.facebook.com/akjurokcrisiscenter/?locale=ru_RU), [Instagram](https://www.instagram.com/p/CiQTqYhLdih/)  
+Website: crisis-center-osh.org: https://crisis-center-osh.org/  
+Social Media: Facebook: https://www.facebook.com/akjurokcrisiscenter/?locale=ru_RU, Instagram: https://www.instagram.com/p/CiQTqYhLdih/  
 
-2. **Crisis Center "Aruulan" (NGO "Ayalzat")**  
+2. __Crisis Center "Aruulan" (NGO "Ayalzat")__  
 Description: Offers psychological, legal, and medical aid to women and girls affected by domestic violence.  
-Address: 205 Lenin St., Osh City.  
+Address: 205 Lenin St., Osh City  
 Phone: +996 (3222) 5-56-08  
 Email: ayalzat@netmail.kg  
-Social Media: [Instagram](https://www.instagram.com/ayalzat.osh/p/Csv3Fr5Mqdc/)  
+Social Media: Instagram: https://www.instagram.com/ayalzat.osh/p/Csv3Fr5Mqdc/  
 
-3. **NGO "Meerban"**  
+3. __NGO "Meerban"__  
 Description: Provides psychological support and advocacy for women affected by violence.  
-Address: 312/23 Lenin St., Osh City.  
+Address: 312/23 Lenin St., Osh City  
 Phone: +996 (3222) 7-40-06, +996 (3222) 7-40-17  
 Email: meerban.osh@mail.ru  
 """
