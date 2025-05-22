@@ -30,7 +30,7 @@ def init_db():
 
 
 def is_registered(user_id: int) -> bool:
-    return user_id in [user[7] for user in list_users()]
+    return user_id in [user[9] for user in list_users()]
 
 
 def add_user(name: str, age: int, gender: str, ph_num: int, with_kids: str, problem: str, 
